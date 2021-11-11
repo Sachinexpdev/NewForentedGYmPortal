@@ -208,7 +208,7 @@ const [info, setInfo] = useState(false)
 
 var perm = cookies.get('perms')
 
-  if (perm.includes('Holidays')){
+//   if (perm.includes('Holidays')){
 
   return (
     <>
@@ -377,10 +377,11 @@ var perm = cookies.get('perms')
         </CModal>
 
     </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+// }
+//   else{
+//     return window.location.href='#/dashboard'
+//   }
 }
 
 export default Classes

@@ -244,7 +244,7 @@ async function deleteMembership(uuid) {
 }
 var perm = cookies.get('perms')
 
-  if (perm.includes('Product')){
+//   if (perm.includes('Product')){
   return (
     <>
    
@@ -463,10 +463,11 @@ var perm = cookies.get('perms')
         </CModal>
 
     </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+// }
+//   else{
+//     return window.location.href='#/dashboard'
+//   }
 }
 
 export default Membership

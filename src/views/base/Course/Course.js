@@ -259,8 +259,7 @@ function Clicker(uuid) {
 
   var perm = cookies.get('perms')
 
-  if (perm.includes('Product')){
-
+//   if (perm.includes('Product')){
 
   return (
     <>
@@ -508,10 +507,11 @@ function Clicker(uuid) {
         </CModal>
 
     </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+// }
+//   else{
+//     return window.location.href='#/dashboard'
+//   }
 }
 
 export default Course

@@ -166,7 +166,7 @@ async function DeletePermission(uuid) {
 
 var perm = cookies.get('perms')
 
-  if (perm.includes('Role and Permissions')){
+  // if (perm.includes('Role and Permissions')){
   return (
     <>
    
@@ -344,10 +344,11 @@ var perm = cookies.get('perms')
         </CModal>
 
     </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+// }
+//   else{
+//     return window.location.href='#/dashboard'
+//   }
 }
 
 export default Expenses

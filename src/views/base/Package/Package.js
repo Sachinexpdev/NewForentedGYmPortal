@@ -241,7 +241,7 @@ async function deletePackage(uuid) {
 }
 var perm = cookies.get('perms')
 
-  if (perm.includes('Packages')){
+ 
   return (
     <>
    
@@ -486,10 +486,8 @@ var perm = cookies.get('perms')
         </CModal>
 
     </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+ 
 }
 
 export default Package

@@ -58,7 +58,7 @@ const Expenses = () => {
   }, [])
   var perm = cookies.get('perms')
 
-  if (perm.includes('Gymprofile')){
+  // if (perm.includes('Gymprofile')){
 
   return (
     <>
@@ -582,10 +582,11 @@ const Expenses = () => {
 
 
  </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+// }
+//   else{
+//     return window.location.href='#/dashboard'
+//   }
 }
 
 export default Expenses

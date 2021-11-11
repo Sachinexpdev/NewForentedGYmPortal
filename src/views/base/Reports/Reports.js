@@ -178,7 +178,7 @@ const [getclasses, setgetclasses] = useState([])
 
 var perm = cookies.get('perms')
 
-  if (perm.includes('Reports')){
+  // if (perm.includes('Reports')){
 
   return (
     <>
@@ -271,10 +271,11 @@ var perm = cookies.get('perms')
       
 
     </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+// }
+//   else{
+//     return window.location.href='#/dashboard'
+//   }
 }
 
 export default Classes

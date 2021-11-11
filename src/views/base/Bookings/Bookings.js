@@ -78,7 +78,7 @@ function Clicker(uuid) {
   
   var perm = cookies.get('perms')
 
-  if (perm.includes('Bookings')){
+  // if (perm.includes('Bookings')){
 
 
   return (
@@ -216,10 +216,11 @@ function Clicker(uuid) {
         </CModal>
 
     </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+// }
+//   else{
+//     return window.location.href='#/dashboard'
+//   }
 }
 
 export default Classes

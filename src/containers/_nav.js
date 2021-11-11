@@ -1,7 +1,7 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import Cookies from 'universal-cookie';
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
 const cookies = new Cookies();
 var NavArray = new Array();
 if(!(cookies.get('uuid') && cookies.get('gym_uuid'))){
@@ -9,25 +9,24 @@ if(!(cookies.get('uuid') && cookies.get('gym_uuid'))){
 }
 var perm = cookies.get('perms');
 // alert(perm)
+
+console.log("permmm>>>>>",perm)
 if(!perm){
   window.location.reload();
 }
 NavArray.push( {
-    
   _tag: 'CSidebarNavItem',
   name: 'Dashboard',
   to: '/dashboard',
   icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
- 
 
 },{
-
-_tag: 'CSidebarNavItem',
-name: 'CRM',
-to: '/base/manage',
-icon: 'cil-drop',
-
-}, {
+  _tag: 'CSidebarNavItem',
+  name: 'CRM',
+  to: '/base/Manage',
+  icon: 'cil-drop',
+}, 
+{
 _tag: 'CSidebarNavItem',
 name: 'Plans and Packages',
 to: '/base/Package',

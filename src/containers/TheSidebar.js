@@ -81,9 +81,9 @@ const TheSidebar = () => {
         </div>
         
       </div>
-        <CCreateElement
-        
+        <CCreateElement        
           items={navigation}
+          key={Math.floor(Math.random() * 10)}
           components={{
             CSidebarNavDivider,
             CSidebarNavDropdown,

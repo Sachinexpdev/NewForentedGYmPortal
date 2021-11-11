@@ -291,7 +291,7 @@ async function DeleteUser(uuid) {
 }
 var perm = cookies.get('perms')
 
-  if (perm.includes('Users')){
+  // if (perm.includes('Users')){
 
   return (
     <>
@@ -556,10 +556,11 @@ var perm = cookies.get('perms')
         </CModal>
 
     </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+// }
+//   else{
+//     return window.location.href='#/dashboard'
+//   }
 }
 
 export default Expenses

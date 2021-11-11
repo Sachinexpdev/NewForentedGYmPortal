@@ -285,7 +285,7 @@ async function deleteclasses(uuid) {
     }
 }
 //  debugger
-if (perm.includes('Product')){
+// if (perm.includes('Product')){
   return (
     <>
    
@@ -684,10 +684,11 @@ if (perm.includes('Product')){
         </CModal>
 
     </>
-    )}
-else{
-    return window.location.href = '#/dashboard'
-}
+    )
+// }
+// else{
+//     return window.location.href = '#/dashboard'
+// }
 
 }
 

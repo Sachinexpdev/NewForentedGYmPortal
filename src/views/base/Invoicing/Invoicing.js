@@ -74,7 +74,7 @@ const [info, setInfo] = useState(false)
 
 var perm = cookies.get('perms')
 
-if (perm.includes('Billing')){
+// if (perm.includes('Billing')){
   return (
     <>
    
@@ -268,10 +268,11 @@ if (perm.includes('Billing')){
 
       
     </>
-  )}
-else{
-  return window.location.href='#/dashboard'
-}
+  )
+// }
+// else{
+//   return window.location.href='#/dashboard'
+// }
 }
 
 export default Invoicing

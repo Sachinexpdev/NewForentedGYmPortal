@@ -283,7 +283,7 @@ const UserDetail = () => {
   }
   var perm = cookies.get('perms')
 
-  if (perm.includes('CRM')){
+ 
   return (
     <>
       <CRow>
@@ -966,10 +966,8 @@ const UserDetail = () => {
 
 
     </>
-  )}
-  else{
-    return window.location.href='#/dashboard'
-  }
+  )
+  
 }
 
 export default UserDetail
