@@ -60,6 +60,11 @@ NavArray.push(
       //   name: 'Online',
       //   to: '/base/Online',
       // },
+      {
+          _tag: 'CSidebarNavItem',
+          name: 'Addlevel',
+          to: '/base/addlevel',
+        },
       // {
       //   _tag: 'CSidebarNavItem',
       //   name: 'On Demand Videos',
