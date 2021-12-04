@@ -61,10 +61,15 @@ NavArray.push(
       //   to: '/base/Online',
       // },
       {
-          _tag: 'CSidebarNavItem',
-          name: 'Addlevel',
-          to: '/base/addlevel',
-        },
+        _tag: "CSidebarNavItem",
+        name: "Addlevel",
+        to: "/base/addlevel",
+      },
+      {
+        _tag: "CSidebarNavItem",
+        name: "Agegroup",
+        to: "/base/age-group",
+      },
       // {
       //   _tag: 'CSidebarNavItem',
       //   name: 'On Demand Videos',
