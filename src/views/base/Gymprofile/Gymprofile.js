@@ -206,7 +206,14 @@ const Expenses = () => {
                             class="form-control"
                             id="course_scheduled_on"
                           >
-                            <option>Select</option>
+                            <option disabled>Select</option>
+                            <option>Sanday</option>
+                            <option>Monday</option>
+                            <option>Tuesday</option>
+                            <option>Wednesday</option>
+                            <option>Thursday</option>
+                            <option>friday</option>
+                            <option>Saturday</option>
                           </select>
                         </div>
                       </div>

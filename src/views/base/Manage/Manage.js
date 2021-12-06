@@ -168,7 +168,7 @@ const UserDetail = () => {
       )
       .then((getuuid) => {
         //  debugger
-        console.log(getuuid);
+        console.log("getUUId>>>>>>>>>>>>>>>>>", getuuid);
         userclass(getuuid.data);
       })
 
@@ -596,7 +596,7 @@ const UserDetail = () => {
                     </div>
                   </CTabPane>
                   {/*--------------------------- EDIT PAGE---------------------------------- */}
-                  <CTabPane>
+                  {/* <CTabPane>
                     <CCol xs="12" lg="12">
                       <form id="myForm" enctype="multipart/form-data">
                         <div className="col-md-6">
@@ -779,7 +779,7 @@ const UserDetail = () => {
                           </div>
 
                           <div className="col-md-12 text-center">
-                            {/* <a href="#"><span class="badge badge-info">Reset Password</span></a> */}
+                            <a href="#"><span class="badge badge-info">Reset Password</span></a>
                             <button
                               type="button"
                               onClick={UserUpdate}
@@ -791,7 +791,7 @@ const UserDetail = () => {
                         </div>
                       </form>
                     </CCol>
-                  </CTabPane>
+                  </CTabPane> */}
 
                   {/* ----------------------------- HISTORY TAB --------------------------------- */}
                   <CTabPane>
